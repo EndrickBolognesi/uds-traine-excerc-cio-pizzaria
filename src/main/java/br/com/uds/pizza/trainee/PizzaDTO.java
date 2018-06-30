@@ -1,12 +1,12 @@
 package br.com.uds.pizza.trainee;
 
-   abstract class PizaDTO {
+   abstract class PizzaDTO {
     String massa, queijo, molho, sabor;
     int tempoDePreparo;
 
 
 
-    public PizaDTO(String massa, String queijo, String molho, String sabor, int tempoDePreparo){
+    public PizzaDTO(String massa, String queijo, String molho, String sabor, int tempoDePreparo){
 
     }
 

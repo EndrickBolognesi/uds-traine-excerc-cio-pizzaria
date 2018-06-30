@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-public  class Pizza extends PizaDTO {
+public  class Pizza extends PizzaDTO {
 
     @ApiModelProperty(hidden = true)
     private final LocalDateTime dataCadastro;

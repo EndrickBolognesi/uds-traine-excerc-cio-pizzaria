@@ -1,6 +1,5 @@
 package br.com.uds.pizza.trainee;
 
-import org.apache.tomcat.util.http.parser.HttpParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +16,8 @@ public class PizzaController {
     private PizzaService pizzaService;
 
     @PostMapping
-    public ResponseEntity criar(@ResponseBody PizaDTO pizaDTO){
-        return new ResponseEntity(pizzaService.criar(pizaDTO)
+    public ResponseEntity criar(@ResponseBody PizzaDTO pizzaDTO){
+        return new ResponseEntity(pizzaService.criar(pizzaDTO)
         .toString(),
                 HttpStatus.CREATED);
 
