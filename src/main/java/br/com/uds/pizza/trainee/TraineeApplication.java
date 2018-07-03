@@ -3,7 +3,7 @@ package br.com.uds.pizza.trainee;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication (scanBasePackages = "br.com.uds.pizza.trainee")
+@SpringBootApplication (scanBasePackages = "br.com.uds.pizza")
 public class TraineeApplication {
 
 	public static void main(String[] args) {
