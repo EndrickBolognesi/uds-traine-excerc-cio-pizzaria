@@ -4,10 +4,12 @@ package br.com.uds.pizza.trainee;
     String massa, queijo, molho, sabor;
     int tempoDePreparo;
 
-
-
     public PizzaDTO(String massa, String queijo, String molho, String sabor, int tempoDePreparo){
-
+        this.massa = massa;
+        this.queijo = queijo;
+        this.molho = molho;
+        this.sabor = sabor;
+        this.tempoDePreparo = tempoDePreparo;
     }
 
     public String getMassa() {
@@ -18,11 +20,11 @@ package br.com.uds.pizza.trainee;
         this.massa = massa;
     }
 
-    public String getQuejio() {
+    public String getQueijo() {
         return queijo;
     }
 
-    public void setQuejio(String quejio) {
+    public void setQueijo(String quejio) {
         this.queijo = quejio;
     }
 
@@ -49,4 +51,17 @@ package br.com.uds.pizza.trainee;
     public void setTempoDePreparo(int tempoDePreparo) {
         this.tempoDePreparo = tempoDePreparo;
     }
-}
+
+       @Override
+       public String toString() {
+           return "PizzaDTO{" +
+                   "  massa='" + massa + '\'' +
+                   ", queijo='" + queijo + '\'' +
+                   ", molho='" + molho + '\'' +
+                   ", sabor='" + sabor + '\'' +
+                   ", tempoDePreparo=" + tempoDePreparo +
+                   '}';
+       }
+
+
+   }

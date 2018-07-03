@@ -1,11 +1,18 @@
 package br.com.uds.pizza.trainee;
 
 import java.util.Set;
+import java.util.UUID;
 
 public interface PizzaService {
 
-    public PizzaDTO criar(PizzaDTO pizzaDTO);
+    Pizza criar(PizzaDTO pizzaDTO);
 
-    Set<PizzaDTO> listar();
+    Set<Pizza> listar();
+
+    Pizza obter(UUID id);
+
+    void remover(UUID id);
+
+    void editar(UUID id, PizzaDTO pizzaDTO);
 
 }
